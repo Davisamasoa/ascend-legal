@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ascend · Política de Privacidade</title>
+<style>
+  :root { --bg: #05070d; --panel: #0c1220; --text: #e6ebf5; --muted: #9aa6bd; --accent: #5b8cff; --border: rgba(91,140,255,0.35); }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: 0.04em; }
+  h2 { font-size: 19px; margin: 36px 0 8px; color: var(--accent); }
+  p, li { color: var(--text); }
+  .muted { color: var(--muted); font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--border); }
+  th { color: var(--muted); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .box { border: 1px solid var(--border); background: var(--panel); padding: 16px; margin: 16px 0; }
+  a { color: var(--accent); }
+  @media (max-width: 560px) { table, thead, tbody, tr, th, td { display: block; } thead { display: none; } td { border: 0; padding: 4px 0; } tr { border-bottom: 1px solid var(--border); padding: 10px 0; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Política de Privacidade do Ascend</h1>
+  <p class="muted">Última atualização: 8 de outubro de 2026</p>
+
+  <p>O Ascend é um aplicativo de treino com elementos de jogo (nível, XP, ranks, conquistas). Esta política explica quais dados o app coleta, por que, onde eles ficam e como você pode apagá-los. Ela segue a Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018).</p>
+  <p>Responsável pelo app e pelos dados: Davi Machado, desenvolvedor do Ascend. Contato: <a href="mailto:davisamasoa@gmail.com">davisamasoa@gmail.com</a>.</p>
+
+  <h2>1. Dados que coletamos</h2>
+  <table>
+    <thead><tr><th>Dado</th><th>Para quê</th><th>Onde fica</th></tr></thead>
+    <tbody>
+      <tr><td><strong>E-mail</strong> (e, no login com Google, o identificador da sua conta Google)</td><td>Criar e acessar a sua conta no Ascend.</td><td>Supabase (nosso provedor de contas e banco de dados).</td></tr>
+      <tr><td><strong>Progresso no app</strong>: nome de jogador, objetivo, peso, altura, nível de experiência, plano de treino, treinos registrados (exercícios, séries, cargas, repetições), nível, ouro, conquistas, streak e preferências</td><td>Montar o seu plano de treino, calcular a sua evolução e guardar o backup do seu progresso na sua conta, para recuperá-lo em outro aparelho.</td><td>No seu aparelho e, como backup, no Supabase, ligado à sua conta.</td></tr>
+      <tr><td><strong>Relatórios de erro</strong>: a mensagem do erro, onde ele aconteceu no código, modelo do aparelho e versão do Android</td><td>Encontrar e corrigir falhas do app.</td><td>Sentry (serviço de monitoramento de erros).</td></tr>
+    </tbody>
+  </table>
+  <p>Peso e altura são dados de saúde (dados sensíveis na LGPD). Eles e os seus treinos são usados com o seu <strong>consentimento</strong>, que você dá ao marcar a caixa de aceite antes de criar ou acessar a conta. Para retirar o consentimento, apague a conta (seção 5).</p>
+  <p>Os relatórios de erro <strong>não</strong> incluem o seu e-mail, o seu nome, o seu endereço IP nem o conteúdo do seu progresso.</p>
+  <p><strong>Não coletamos</strong>: localização, contatos, fotos da sua galeria, áudio, identificadores de publicidade nem dados de navegação. O app não exibe anúncios e não vende nem compartilha dados para publicidade.</p>
+
+  <h2>2. Permissões do aparelho</h2>
+  <ul>
+    <li><strong>Notificações</strong>: lembretes de treino e das missões do dia. São agendadas no próprio aparelho; nada é enviado a servidores.</li>
+    <li><strong>Fotos (salvar na galeria)</strong>: usada só quando você pede para salvar uma imagem (relatório semanal, card para os stories). O app grava a imagem na galeria; não lê nem envia as suas fotos.</li>
+  </ul>
+
+  <h2>3. Com quem os dados são compartilhados</h2>
+  <p>Só com os serviços que fazem o app funcionar, que tratam os dados em nosso nome e apenas para isso:</p>
+  <ul>
+    <li><strong>Supabase</strong>: contas e backup do progresso.</li>
+    <li><strong>Google</strong>: apenas se você escolher entrar com o Google, para confirmar a sua identidade.</li>
+    <li><strong>Sentry</strong>: relatórios de erro.</li>
+  </ul>
+  <p>Esses serviços podem guardar dados em servidores fora do Brasil. Toda comunicação entre o app e eles é criptografada (HTTPS). Não vendemos dados pessoais.</p>
+
+  <h2>4. Por quanto tempo guardamos</h2>
+  <ul>
+    <li><strong>Conta e backup</strong>: enquanto a sua conta existir. Ao apagar a conta, o e-mail e o backup são apagados dos nossos servidores.</li>
+    <li><strong>Dados no aparelho</strong>: até você resetar o progresso no app ou desinstalá-lo.</li>
+    <li><strong>Relatórios de erro</strong>: apagados automaticamente pelo Sentry após o período de retenção do serviço (no máximo 90 dias).</li>
+  </ul>
+
+  <h2 id="apagar-conta">5. Como apagar a sua conta e os seus dados</h2>
+  <div class="box">
+    <p style="margin-top:0"><strong>Pelo app:</strong> Configurações → Backup na nuvem → Apagar conta. A conta e o backup na nuvem são apagados na hora, de forma permanente.</p>
+    <p style="margin-bottom:0"><strong>Sem o app</strong> (por exemplo, se você já desinstalou): envie um e-mail para <a href="mailto:davisamasoa@gmail.com?subject=Apagar%20minha%20conta%20do%20Ascend">davisamasoa@gmail.com</a> com o assunto “Apagar minha conta do Ascend”, a partir do e-mail cadastrado. Apagamos a conta e o backup em até 30 dias e confirmamos por e-mail.</p>
+  </div>
+  <p>Para apagar só o progresso do aparelho, sem apagar a conta: Configurações → Resetar progresso.</p>
+
+  <h2>6. Seus direitos (LGPD)</h2>
+  <p>Você pode pedir a qualquer momento: confirmação de que tratamos os seus dados, acesso a eles, correção, cópia (portabilidade) e exclusão. O app já permite exportar o progresso em arquivo (Configurações → Backup em arquivo) e apagar a conta. Para qualquer outro pedido, escreva para o contato acima.</p>
+
+  <h2>7. Crianças</h2>
+  <p>O Ascend não é destinado a menores de 13 anos e não coleta dados deles de propósito. Se você souber de uma conta de uma criança, escreva para o contato acima e ela será apagada.</p>
+
+  <h2>8. Mudanças nesta política</h2>
+  <p>Se esta política mudar, a data no topo será atualizada e, se a mudança for importante, avisaremos no app.</p>
+</main>
+</body>
+</html>
