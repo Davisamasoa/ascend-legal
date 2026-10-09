@@ -164,6 +164,7 @@
           <tr><td><strong>Progresso no app</strong>: nome de jogador, objetivo, peso, altura, nível de experiência, plano de treino, treinos registrados (exercícios, séries, cargas, repetições), nível, ouro, conquistas, streak e preferências</td><td>Montar o seu plano de treino, calcular a sua evolução e guardar o backup do seu progresso na sua conta, para recuperá-lo em outro aparelho.</td><td>No seu aparelho e, como backup, no Supabase, ligado à sua conta.</td></tr>
           <tr><td><strong>Assinatura (Ascend Premium)</strong>: se você assinar, o status da assinatura (ativa, em teste, data de renovação) e o identificador da sua conta no Ascend. O pagamento é feito pelo Google Play — <strong>não</strong> recebemos dados do seu cartão.</td><td>Liberar os recursos Premium na sua conta, em qualquer aparelho.</td><td>Google Play e RevenueCat (serviço que gerencia assinaturas).</td></tr>
           <tr><td><strong>Preferências de treino para a IA</strong> (só no Premium, quando você pede um plano por IA): objetivo, equipamento, nível de experiência, dias por semana, duração e divisão do treino, e a lista de exercícios disponíveis.</td><td>Gerar o seu plano semanal.</td><td>Enviadas ao provedor de IA (Groq) através do nosso servidor (Supabase). <strong>Não</strong> enviamos nome, e-mail, peso nem altura.</td></tr>
+          <tr><td><strong>Ligas semanais</strong> (opcional, só se você entrar): nome de jogador, rank e XP ganho na semana.</td><td>Montar o ranking da semana entre jogadores do mesmo rank.</td><td>Supabase. Ficam <strong>visíveis para os outros jogadores do seu grupo</strong> (até 20 pessoas). Ao sair das ligas, você some do grupo na hora.</td></tr>
           <tr><td><strong>Relatórios de erro</strong>: a mensagem do erro, onde ele aconteceu no código, modelo do aparelho e versão do Android</td><td>Encontrar e corrigir falhas do app.</td><td>Sentry (serviço de monitoramento de erros).</td></tr>
         </tbody>
       </table>
@@ -192,6 +193,7 @@
         <li><strong>Google Play e RevenueCat</strong>: apenas se você assinar o Ascend Premium — pagamento e status da assinatura.</li>
         <li><strong>Groq</strong> (provedor de IA): apenas se você gerar um plano por IA — recebe só as preferências de treino descritas acima.</li>
       </ul>
+      <p>Se você entrar nas <strong>ligas semanais</strong>, o seu nome de jogador, rank e XP da semana aparecem para os outros jogadores do seu grupo. Nenhum outro dado seu é mostrado a outros jogadores.</p>
       <p>Esses serviços podem guardar dados em servidores fora do Brasil. Toda comunicação entre o app e eles é criptografada (HTTPS). Não vendemos dados pessoais.</p>
     </section>
 
